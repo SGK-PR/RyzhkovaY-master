@@ -37,10 +37,11 @@
             this.tbResistance = new System.Windows.Forms.TextBox();
             this.lbResistance = new System.Windows.Forms.Label();
             this.lbOm = new System.Windows.Forms.Label();
-            this.btCalculate = new System.Windows.Forms.Button();
+            this.butStart = new System.Windows.Forms.Button();
             this.lbAmperage = new System.Windows.Forms.Label();
             this.tbAmperage = new System.Windows.Forms.TextBox();
             this.lbAmper = new System.Windows.Forms.Label();
+            this.butStop = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -120,16 +121,16 @@
             this.lbOm.TabIndex = 7;
             this.lbOm.Text = "Ом";
             // 
-            // btCalculate
+            // butStart
             // 
-            this.btCalculate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btCalculate.Location = new System.Drawing.Point(230, 206);
-            this.btCalculate.Name = "btCalculate";
-            this.btCalculate.Size = new System.Drawing.Size(91, 38);
-            this.btCalculate.TabIndex = 8;
-            this.btCalculate.Text = "Рассчитать";
-            this.btCalculate.UseVisualStyleBackColor = false;
-            this.btCalculate.Click += new System.EventHandler(this.BtCalculate_Click);
+            this.butStart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.butStart.Location = new System.Drawing.Point(230, 206);
+            this.butStart.Name = "butStart";
+            this.butStart.Size = new System.Drawing.Size(91, 38);
+            this.butStart.TabIndex = 8;
+            this.butStart.Text = "Рассчитать";
+            this.butStart.UseVisualStyleBackColor = false;
+            this.butStart.Click += new System.EventHandler(this.butStart_Click);
             // 
             // lbAmperage
             // 
@@ -148,7 +149,6 @@
             this.tbAmperage.Name = "tbAmperage";
             this.tbAmperage.Size = new System.Drawing.Size(118, 29);
             this.tbAmperage.TabIndex = 10;
-         
             // 
             // lbAmper
             // 
@@ -160,15 +160,26 @@
             this.lbAmper.TabIndex = 11;
             this.lbAmper.Text = "Ампер";
             // 
+            // butStop
+            // 
+            this.butStop.Location = new System.Drawing.Point(409, 206);
+            this.butStop.Name = "butStop";
+            this.butStop.Size = new System.Drawing.Size(108, 35);
+            this.butStop.TabIndex = 12;
+            this.butStop.Text = "Сброс";
+            this.butStop.UseVisualStyleBackColor = true;
+            this.butStop.Click += new System.EventHandler(this.butStop_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.butStop);
             this.Controls.Add(this.lbAmper);
             this.Controls.Add(this.tbAmperage);
             this.Controls.Add(this.lbAmperage);
-            this.Controls.Add(this.btCalculate);
+            this.Controls.Add(this.butStart);
             this.Controls.Add(this.lbOm);
             this.Controls.Add(this.lbResistance);
             this.Controls.Add(this.tbResistance);
@@ -195,10 +206,11 @@
         private System.Windows.Forms.TextBox tbResistance;
         private System.Windows.Forms.Label lbResistance;
         private System.Windows.Forms.Label lbOm;
-        private System.Windows.Forms.Button btCalculate;
+        private System.Windows.Forms.Button butStart;
         private System.Windows.Forms.Label lbAmperage;
         private System.Windows.Forms.TextBox tbAmperage;
         private System.Windows.Forms.Label lbAmper;
+        private System.Windows.Forms.Button butStop;
     }
 }
 

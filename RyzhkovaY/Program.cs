@@ -18,10 +18,6 @@ namespace RyzhkovaY
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            var context = SynchronizationContext.Current;
-            var form = new FormPotok();
-
-            context= SynchronizationContext.Current;
             Application.Run(new Form1());
 
         }
